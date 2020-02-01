@@ -16,7 +16,7 @@ def make_courses
     course.description = post.css("p").text
   end
 end
-
+Scraper.new.print_courses
 
 def get_courses
 self.get_page.css(".post")
